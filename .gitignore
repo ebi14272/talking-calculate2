@@ -1,129 +1,153 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+#impor# pyttsx3
+import pyttsx3
+#-----#------------------speaking code 1------------------------
+engine=pyttsx3.init()
+engine.setProperty("rate", 150)
+voices = engine.getProperty("voices")
+print("hi i'm a calculate ")
+engine.say("hi i'm a calculate ")
+print("_____________________________________________________________________")
+print("if you want work with me just send this item to me %  *  +   /   -")
+engine.say("if you want work with me just send this item to me")
+print("_____________________________________________________________________")
+print("if you dont want me just send me a Q")
+engine.say("if you dont want me just send me a Q")
+while True :
+        engine.say("type this item to me")
+        print("_____________________________________________________________________")
+        print("type this item to me  %   *   +   /   -   q")
+        engine.runAndWait()
+#------------------codes(input)-----------------------------
+        print("_____________________________________________________________________")
+        your_type=str(input(" >>> "))
+#-----------------codes(quit)------------------------------------
+        if your_type=="q":
+                print("ok bye :/")
+#--------------------------speaking codes 0----------------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("ok bye")
+                engine.runAndWait()
+                break
+#-----------------------------code(+)-----------------------------
+        elif your_type=="+"  :
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the first number")
+                engine.runAndWait()
+                first=float(input("enter the first number : "))
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the second number")
+                engine.runAndWait()
+                second=float(input("enter the second number : "))
+                mean=first+second
+                engine.say(mean)
+                print(mean)
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+#------------------------speaking code 2----------------------- 
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say(mean)
+                engine.runAndWait()
+#-----------------------------codes(*)---------------------------------
+        elif your_type=="*":
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the first number")
+                engine.runAndWait()
+                first_1=float(input("enter the first number : "))
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the second number")
+                engine.runAndWait()
+                second_1=float(input("enter the second number : "))
+                mean1=first_1*second_1
+                print(mean1) 
+#---------------------------speaking code 3---------------------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say(mean1)
+                engine.runAndWait()
+#-------------------------------codes(/)----------------------------------
+        elif your_type=="/" :
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the first number")
+                engine.runAndWait()
+                first_2=float(input("enter the first number : "))
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the second number")
+                engine.runAndWait()
+                second_2=float(input("enter the second number : "))
+                mean2=first_2/second_2
+                print(mean2) 
+#---------------------------speaking code 4---------------------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say(mean2)
+                engine.runAndWait()
+#-------------------------------codes(-)----------------------------------
+        elif your_type=="-" :
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the first number")
+                engine.runAndWait()
+                first_3=float(input("enter the first number : "))
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the second number")
+                engine.runAndWait()
+                second_3=float(input("enter the second number : "))
+                mean3=first_3-second_3
+                print(mean3) 
+#-------------------------------speaking code 5-------------------------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say(mean3)
+                engine.runAndWait()
+#-------------------------------codes(%)-----------------------------------
+        elif your_type=="%":
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the first number")
+                engine.runAndWait()
+                first_4=float(input("enter the first number : "))
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("enter the second number")
+                engine.runAndWait()
+                second_4=float(input("enter the second number : "))
+                mean4=first_4%second_4
+                print(mean4)
+#-------------------------------speaking code 6-------------------------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say(mean4)
+                engine.runAndWait()
+#-------------------------------codes(else)---------------------
+        else:
+                print("I dont understood it you just can wright this item to me  %   *  +   /   -   q !!!")
+#--------------------------------speaking codes 7-----------------
+                engine=pyttsx3.init()
+                engine.setProperty("rate", 150)
+                voices = engine.getProperty("voices")
+                engine.say("I dont understood it you just can wright this item to me ...")
+                engine.runAndWait()
